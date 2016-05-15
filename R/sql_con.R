@@ -6,11 +6,14 @@
 #'
 #' @export
 
-sql_con <- function(db_name = "db", drv = "SQLite()", file = NULL){
+sql_con <- function(db_name = "db", drv = SQLite(), file = NULL){
 
 	if(is.null(file)) stop("Specify where db may be found.")
 	if(drv != "SQLite()") message("Are you sure about the db format?")
 
-	assign(db_name, dbConnect(drv, file))
+	library(RSQlite)
+	library(sqldf)
+
+	assign(db_name, dbConnect(SQLite(), file))
 
 }
