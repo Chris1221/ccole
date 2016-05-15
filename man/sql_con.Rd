@@ -4,14 +4,14 @@
 \alias{sql_con}
 \title{Quick connect to SQLite db}
 \usage{
-sql_con(db_name = "db", drv = "SQLite()", file = NULL)
+sql_con(file = NULL, db_name = "db", drv = SQLite())
 }
 \arguments{
+\item{file}{Relative or absolute path to db.}
+
 \item{db_name}{The db will be assigned to this. Defaults to db.}
 
 \item{drv}{Type of connection}
-
-\item{file}{Relative or absolute path to db.}
 }
 \description{
 Quick connect to SQLite db

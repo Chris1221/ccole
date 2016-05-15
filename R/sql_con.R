@@ -11,6 +11,6 @@ sql_con <- function(file = NULL, db_name = "db", drv = SQLite()){
 	if(is.null(file)) stop("Specify where db may be found.")
 	
 	library(RSQLite)
-	assign(db_name, dbConnect(SQLite(), file))
+	assign(db_name, dbConnect(SQLite(), file), envir = globalenv())
 
 }
