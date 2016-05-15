@@ -1,0 +1,50 @@
+PackratFormat: 1.4
+PackratVersion: 0.4.7.9
+RVersion: 3.2.3
+Repos: BioCsoft=https://bioconductor.org/packages/3.2/bioc,
+    BioCann=https://bioconductor.org/packages/3.2/data/annotation,
+    BioCexp=https://bioconductor.org/packages/3.2/data/experiment,
+    BioCextra=https://bioconductor.org/packages/3.2/extra,
+    CRAN=https://cran.rstudio.com/
+
+Package: DBI
+Source: CRAN
+Version: 0.4-1
+Hash: 6524d5c5d30ff74084ac028eeb19eb1b
+
+Package: RSQLite
+Source: CRAN
+Version: 1.0.0
+Hash: 3df52a54766f420d257debad962146c0
+Requires: DBI
+
+Package: chron
+Source: CRAN
+Version: 2.3-47
+Hash: d25d96d908cd21080f24c89eed4c80a0
+
+Package: gsubfn
+Source: CRAN
+Version: 0.6-6
+Hash: cc1999b8ee76bbf10c968ac973290421
+Requires: proto
+
+Package: packrat
+Source: github
+Version: 0.4.7-9
+Hash: cb813000f5c36e0eff4bc6f0b67f91eb
+GithubRepo: packrat
+GithubUsername: rstudio
+GithubRef: master
+GithubSha1: d04c33541957f1d8c1f8344fcde11689e6277f83
+
+Package: proto
+Source: CRAN
+Version: 0.3-10
+Hash: 05d7ad64db29a39d1b02c4b9f1f4edb2
+
+Package: sqldf
+Source: CRAN
+Version: 0.4-10
+Hash: 46cd78edf0fc3c746c7d26f44fcb4e50
+Requires: DBI, RSQLite, chron, gsubfn, proto
